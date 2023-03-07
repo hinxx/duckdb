@@ -9,6 +9,7 @@ static ExtensionAlias internal_aliases[] = {{"http", "httpfs"}, // httpfs
                                             {"postgres", "postgres_scanner"}, // postgres
                                             {"sqlite", "sqlite_scanner"},     // sqlite
                                             {"sqlite3", "sqlite_scanner"},
+                                            {"rocksdb", "rocksdb_scanner"},		// rocksdb
                                             {nullptr, nullptr}};
 
 idx_t ExtensionHelper::ExtensionAliasCount() {
