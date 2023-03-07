@@ -99,6 +99,7 @@ static DefaultExtension internal_extensions[] = {
     {"jemalloc", "Overwrites system allocator with JEMalloc", JEMALLOC_STATICALLY_LOADED},
     {"motherduck", "Enables motherduck integration with the system", false},
     {"sqlite_scanner", "Adds support for reading SQLite database files", false},
+    {"rocksdb_scanner", "Adds support for reading RocksDB database files", false},
     {"postgres_scanner", "Adds support for reading from a Postgres database", false},
     {"inet", "Adds support for IP-related data types and functions", false},
     {nullptr, nullptr, false}};
