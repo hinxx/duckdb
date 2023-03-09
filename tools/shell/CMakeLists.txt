@@ -13,14 +13,7 @@ include_directories(include)
 include_directories(../sqlite3_api_wrapper/include)
 add_executable(shell ${SHELL_SOURCES})
 
-set(ROCKSDB "/home/hinxx/ess/rocksdb")
-#list(APPEND CMAKE_PREFIX_PATH ${ROCKSDB})
-include_directories(${ROCKSDB}/include)
-
 target_link_libraries(shell sqlite3_api_wrapper_static
-                      ${ROCKSDB}/librocksdb.a
-                      bz2
-                      z
                       ${DUCKDB_EXTRA_LINK_FLAGS})
 link_threads(shell)
 if(STATIC_LIBCPP)
